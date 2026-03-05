@@ -130,14 +130,23 @@ Et tortor consequat id porta nibh venenatis cras sed.
 
 <div class="gallery-grid">
 
-    <video height="250px" width="400px"  controls class="room-video">
-    <source src="https://d2n7fc0kw20ri7.cloudfront.net/33sa8%2Fpreview%2F75969939%2Fmain_x360.mp4?response-content-disposition=inline%3Bfilename%3D%22main_x360.mp4%22%3B&response-content-type=video%2Fmp4&Expires=1772708079&Signature=QlJXO5W9y44uI1uESj-yH9Tp1YCqY6jvZp7X~grnbOt1ivfAz5h5aMrpZLWigbVF0ZmuMtdCcrW~8ZIEWTEOhdGPArcHk5Ds7yNeRd9Y8lr9oCbzCkqxOWQbpHhyf9E3W-YxSaxaS6yZhGGLLf5gVymof9Nmw0masRiNOXKZmQ6iqm0P6kXINZMmCgUIik6bXME00~472rrpTT3aMeJYVglDlbcTs478n-bCTTdu54Wt~tvGjVgNcEeFJY7Hmyk~0b8zKs3sxGu4tPuZFKvYIuiumWLIDJxPxWHqo0K2w~2DwXHrwNiZ9-oP3nZHWph16R1y6VvbhCox2anWk~RdOQ__&Key-Pair-Id=APKAJT5WQLLEOADKLHBQ" type="video/mp4">
-    Your browser does not support the video tag.
+<video height="250px" width="400px"  controls class="room-video">
+<source src="https://d2n7fc0kw20ri7.cloudfront.net/33sa8%2Fpreview%2F75969939%2Fmain_x360.mp4?response-content-disposition=inline%3Bfilename%3D%22main_x360.mp4%22%3B&response-content-type=video%2Fmp4&Expires=1772708079&Signature=QlJXO5W9y44uI1uESj-yH9Tp1YCqY6jvZp7X~grnbOt1ivfAz5h5aMrpZLWigbVF0ZmuMtdCcrW~8ZIEWTEOhdGPArcHk5Ds7yNeRd9Y8lr9oCbzCkqxOWQbpHhyf9E3W-YxSaxaS6yZhGGLLf5gVymof9Nmw0masRiNOXKZmQ6iqm0P6kXINZMmCgUIik6bXME00~472rrpTT3aMeJYVglDlbcTs478n-bCTTdu54Wt~tvGjVgNcEeFJY7Hmyk~0b8zKs3sxGu4tPuZFKvYIuiumWLIDJxPxWHqo0K2w~2DwXHrwNiZ9-oP3nZHWph16R1y6VvbhCox2anWk~RdOQ__&Key-Pair-Id=APKAJT5WQLLEOADKLHBQ" type="video/mp4">
+Your browser does not support the video tag.
 </video>
 <img height="250px" width="600px" src="https://i.ibb.co/v6ffVjJ9/Whats-App-Image-2026-03-04-at-13-02-42-1.jpg">
 <img height="250px" width="600px" src="https://i.ibb.co/Cpb43nWR/Whats-App-Image-2026-03-04-at-13-02-41.jpg">
 <img height="250px" width="600px" src="https://i.ibb.co/PvT0Wj7v/Whats-App-Image-2026-03-04-at-13-02-42-2.jpg">
-
+<!-- <img height="250px" width="600px" src="https://i.ibb.co/5XKqNsm9/IMG-0613.png">
+<img height="250px" width="600px" src="https://i.ibb.co/j9M8x6pQ/IMG-0614.png">
+<img height="250px" width="600px" src="https://i.ibb.co/JFnDgZsr/IMG-0615.png">
+<img height="250px" width="600px" src="https://i.ibb.co/Jj01F6HM/IMG-0616.png">
+<img height="250px" width="600px" src="https://i.ibb.co/6cQqdm17/IMG-0617.png"> -->
+<div class="gallery-button">
+    <button onclick="openGallery()" class="view-gallery-btn">
+    View Full Gallery
+    </button>
+    </div>
 <!-- <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858"> -->
 
 </div>
@@ -261,7 +270,47 @@ Et tortor consequat id porta nibh venenatis cras sed.
 </div>
 
 </footer> -->
+<div id="galleryModal" class="gallery-modal">
 
+    <span class="close-gallery" onclick="closeGallery()">×</span>
+    
+    <div class="gallery-modal-content">
+    
+        <video height="250px" width="400px"  controls class="room-video">
+            <source src="https://d2n7fc0kw20ri7.cloudfront.net/33sa8%2Fpreview%2F75969939%2Fmain_x360.mp4?response-content-disposition=inline%3Bfilename%3D%22main_x360.mp4%22%3B&response-content-type=video%2Fmp4&Expires=1772708079&Signature=QlJXO5W9y44uI1uESj-yH9Tp1YCqY6jvZp7X~grnbOt1ivfAz5h5aMrpZLWigbVF0ZmuMtdCcrW~8ZIEWTEOhdGPArcHk5Ds7yNeRd9Y8lr9oCbzCkqxOWQbpHhyf9E3W-YxSaxaS6yZhGGLLf5gVymof9Nmw0masRiNOXKZmQ6iqm0P6kXINZMmCgUIik6bXME00~472rrpTT3aMeJYVglDlbcTs478n-bCTTdu54Wt~tvGjVgNcEeFJY7Hmyk~0b8zKs3sxGu4tPuZFKvYIuiumWLIDJxPxWHqo0K2w~2DwXHrwNiZ9-oP3nZHWph16R1y6VvbhCox2anWk~RdOQ__&Key-Pair-Id=APKAJT5WQLLEOADKLHBQ" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+            <img height="250px" width="600px" src="https://i.ibb.co/v6ffVjJ9/Whats-App-Image-2026-03-04-at-13-02-42-1.jpg">
+            <img height="250px" width="600px" src="https://i.ibb.co/Cpb43nWR/Whats-App-Image-2026-03-04-at-13-02-41.jpg">
+            <img height="250px" width="600px" src="https://i.ibb.co/PvT0Wj7v/Whats-App-Image-2026-03-04-at-13-02-42-2.jpg">
+            <img height="250px" width="600px" src="https://i.ibb.co/5XKqNsm9/IMG-0613.png">
+            <img height="250px" width="600px" src="https://i.ibb.co/j9M8x6pQ/IMG-0614.png">
+            <img height="250px" width="600px" src="https://i.ibb.co/JFnDgZsr/IMG-0615.png">
+            <img height="250px" width="600px" src="https://i.ibb.co/Jj01F6HM/IMG-0616.png">
+            <img height="250px" width="600px" src="https://i.ibb.co/6cQqdm17/IMG-0617.png">
+    
+    </div>
+    
+    </div>
+    <script>
+
+        function openGallery(){
+        document.getElementById("galleryModal").style.display="block";
+        }
+        
+        function closeGallery(){
+        document.getElementById("galleryModal").style.display="none";
+        }
+        
+        </script>
+    <script>
+    window.onclick = function(event) {
+        const modal = document.getElementById("galleryModal");
+        if (event.target == modal) {
+        modal.style.display = "none";
+        }
+        }
+    </script>
 <script>
     window.onload = function() {
       if (window.location.hash) {
