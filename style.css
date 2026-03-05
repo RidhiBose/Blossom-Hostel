@@ -37,7 +37,7 @@ html, body{
     .logo{
     color:var(--primary);
     font-weight:bold;
-    font-size:22px;
+    font-size:clamp(16px, 2vw, 22px);
     }
     
     nav{
@@ -422,3 +422,23 @@ html, body{
             height:auto;
             display:block;
             } */
+            @media (max-width:600px){
+
+                .nav-container{
+                    padding:12px 16px;
+                }
+                
+                nav{
+                    gap:10px;
+                }
+                
+                .nav-link{
+                    font-size:13px;
+                }
+                
+                .contact-btn{
+                    padding:6px 10px;
+                    font-size:12px;
+                }
+                
+                }
