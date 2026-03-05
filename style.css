@@ -459,7 +459,7 @@ html, body{
         background:rgba(0,0,0,0.92);
         z-index:1000;
         
-        display:flex;
+        /* display:flex; */
         justify-content:center;
         align-items:flex-start;
         
